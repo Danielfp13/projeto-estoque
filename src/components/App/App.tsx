@@ -1,13 +1,18 @@
 import React from "react";
-import Button from "../Button";
+import Button from "../../shared/Button";
+import Container from "../../shared/Container";
 import Header from "../Header";
 
 import "./App.css";
 
-
-function TestComponent () {
-  return <img width="16px" src="https://i.pinimg.com/originals/5e/26/79/5e2679281fffe61007e13028b24602a1.png" 
-  alt="icone" />
+function TestComponent() {
+  return (
+    <img
+      width="16px"
+      src="https://i.pinimg.com/originals/5e/26/79/5e2679281fffe61007e13028b24602a1.png"
+      alt="icone"
+    />
+  );
 }
 
 function App() {
@@ -15,16 +20,15 @@ function App() {
     <div className="App">
       <Header title="Stock" />
 
-      <div className="Container">
-
+      <Container>
         <Button
-         /*  content="Botão" */
+          /*  content="Botão" */
           onClick={() => window.alert("Olá tudo bem com você!!!")}
           appendIcon={<TestComponent />}
-        > 
-        alert
-     </Button>
-      </div>
+        >
+          alert
+        </Button>
+      </Container>
     </div>
   );
 }
