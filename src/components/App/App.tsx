@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../../shared/Button";
 import Container from "../../shared/Container";
 import Header from "../Header";
+import Input from "../../shared/Input";
 
 import "./App.css";
+import useEffect from 'react';
 
 function TestComponent() {
   return (
@@ -16,6 +18,9 @@ function TestComponent() {
 }
 
 function App() {
+
+  const[street, setStreet] = useState('')
+
   return (
     <div className="App">
       <Header title="Stock" />
@@ -24,10 +29,14 @@ function App() {
         <Button
           /*  content="Botão" */
           onClick={() => window.alert("Olá tudo bem com você!!!")}
-          appendIcon={<TestComponent />}
-        >
+          appendIcon={<TestComponent />}  >
           alert
         </Button>
+        <Input label="Street" 
+        placeholder="E.g.: 15h Avenue"
+        value={ street }
+        onChange={e => setStreet(e.target.value)}
+        />
       </Container>
     </div>
   );

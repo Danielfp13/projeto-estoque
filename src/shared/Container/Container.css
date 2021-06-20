@@ -1,5 +1,5 @@
-.div.AppContainer{
-   margin-top: 10px;
+.AppContainer{
+   margin: 10px auto;
    max-width: 480px;
 
 }
