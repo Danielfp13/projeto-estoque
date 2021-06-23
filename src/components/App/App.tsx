@@ -1,8 +1,7 @@
 import React from "react";
-
 import Container from "../../shared/Container";
 import Header from "../Header";
-
+import Table from "../../shared/Table";
 import "./App.css";
 
 
@@ -15,7 +14,7 @@ function App() {
       <Header title="Stock" />
 
       <Container>
-  
+        <Table />
       </Container>
     </div>
   );
