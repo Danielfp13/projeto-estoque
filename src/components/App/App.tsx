@@ -7,6 +7,7 @@ import "./App.css";
 
 
 
+
 function App() {
 
   return (
@@ -14,7 +15,7 @@ function App() {
       <Header title="Stock" />
 
       <Container>
- 
+  
       </Container>
     </div>
   );
